@@ -1,0 +1,27 @@
+﻿<div class="row">
+    <div class="col-md-12">
+        <div>
+            <h3>{{message}}</h3>
+            <input type="text" value="" ng-model="name" />
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr style="cursor: pointer;">
+                        <th><a ng-click="sort('ID')">ID</a></th>
+                        <th><a ng-click="sort('firstname')">First Name</a></th>
+                        <th><a ng-click="sort('lastname')">Last Name</a></th>
+                        <th style="text-align: right;"><a ng-click="sort('amount')">Amount</a></th>
+                    </tr>   
+                </thead>
+                <tbody>
+                    <tr ng-repeat="person in people | orderBy: sortFld | filter: name">
+                        <td>{{person.id}}</td>
+                        <td>{{person.firstname}}</td>
+                        <td>{{person.lastname}}</td>
+                        <td style="text-align: right;">{{person.amount | currency}}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>

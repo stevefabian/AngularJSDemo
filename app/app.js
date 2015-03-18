@@ -5,16 +5,16 @@
           function ($routeProvider) {
               $routeProvider.
                 when('/home', {
-                    templateUrl: 'views/home.html',
+                    templateUrl: 'app/views/home.html',
                     controller: 'HomeController'
                 }).
                 when('/people', {
-                    templateUrl: 'views/people.html',
+                    templateUrl: 'app/views/people.html',
                     controller: 'PeopleController'
                 }).
                 when('/movie', {
-                    templateUrl: 'views/movie.html',
-                    controller: 'MovieController'
+                    templateUrl: 'app/views/movie.html',
+                    controller: 'movieController'
                 }).
                 otherwise({
                     redirectTo: '/home'

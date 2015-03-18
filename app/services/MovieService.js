@@ -2,18 +2,22 @@
 
     var app = angular.module('app');
 
-    function MovieService($http) {
+    function movieService($http) {
 
-        var MovieService = {};
+        var movieService = {};
 
-        MovieService.getMovie = function (movie) {
-            return $http.get('http://www.omdbapi.com/?t=' + movie);
+        movieService.getMovie = function (movie, yor) {
+            var url = 'http://www.omdbapi.com/?t=' + movie;
+            if (yor) {
+                url += ("&y=" + yor);
+            }
+            return $http.get(url);
         };
 
-        return MovieService;
+        return movieService;
 
     };
 
-    app.factory('MovieService', MovieService);
+    app.factory('movieService', movieService);
 
 }());

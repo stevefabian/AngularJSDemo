@@ -10,12 +10,14 @@
              {
                  id: 1,
                  firstname: 'Steve',
-                 lastname: 'Fabian'
+                 lastname: 'Fabian',
+                 amount: 21123.45
              },
              {
                  id: 2,
-                 firstname: 'Cosmo',
-                 lastname: 'Fabian'
+                 firstname: 'Chuck',
+                 lastname: 'Lafferty',
+                 amount: 32234.56
              }
         ];
 

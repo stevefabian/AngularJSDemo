@@ -1,0 +1,23 @@
+﻿<div class="row">
+
+    <div class="col-md-12">
+        <h3>{{message}}</h3>
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <form class="form-inline">
+            <div class="form-group">
+                <input type="text" ng-model="title" class="form-control" placeholder="Enter Move Title">
+            </div>
+            <div class="form-group">              
+                <input type="text" ng-model="year" class="form-control" placeholder="Year (Optional)">
+            </div>
+            <button type="submit" class="btn btn-default" ng-click="find()">Find</button>
+        </form>
+    </div>
+</div>
+<hr/>
+<div movie-info ng-show="!!movie"></div>

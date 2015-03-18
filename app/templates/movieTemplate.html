@@ -1,0 +1,24 @@
+﻿<div class="row" ng-show="movie.Response === 'True'">
+    <div class="col-md-4">
+        <img alt='{{movie.Author}}' ng-src="{{movie.Poster}}" ng-show="movie"/>
+    </div>
+    <div class="col-md-8">
+        <h3>Title: {{movie.Title}}</h3>
+        <h4>Year Released</h4>
+        <div>{{movie.Year}}</div>
+        <h4>Genre</h4>
+        <div>{{movie.Genre}}</div>
+        <h4>Plot</h4>
+        <div>{{movie.Plot}}</div>
+        <h4>Director</h4>
+        <div>{{movie.Director}}</div>
+        <h4>Actors</h4>
+        <div>{{movie.Actors}}</div>
+    </div>
+</div>
+
+<div class="row" ng-show="movie.Response === 'False'">
+    <div class="col-md-12">
+        <div class="alert alert-danger">{{movie.Error}}</div>
+    </div>
+</div>

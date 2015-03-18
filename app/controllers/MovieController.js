@@ -2,12 +2,12 @@
 
     var app = angular.module('app');
 
-    function MovieController($scope, MovieService) {
+    function movieController($scope, movieService) {
 
         $scope.message = "Hello from the Movie Controller";
 
         $scope.find = function () {
-            MovieService.getMovie($scope.title)
+            movieService.getMovie($scope.title, $scope.year)
             .then(function (response) {
                 $scope.movie = response.data;
             });
@@ -15,6 +15,6 @@
 
     };
 
-    app.controller('MovieController', MovieController);
+    app.controller('movieController', movieController);
 
 }());
