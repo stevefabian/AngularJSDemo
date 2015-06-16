@@ -1,0 +1,6 @@
+F:\src\GitHub\AngularJSDemo\bin\MovieNut.dll.config
+F:\src\GitHub\AngularJSDemo\bin\MovieNut.dll
+F:\src\GitHub\AngularJSDemo\bin\MovieNut.pdb
+F:\src\GitHub\AngularJSDemo\obj\Debug\MovieNut.csprojResolveAssemblyReference.cache
+F:\src\GitHub\AngularJSDemo\obj\Debug\MovieNut.dll
+F:\src\GitHub\AngularJSDemo\obj\Debug\MovieNut.pdb
